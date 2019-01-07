@@ -1,0 +1,7 @@
+<form [formGroup]="form">
+    <label for="login">Login:</label>
+    <input id="login" formControlName="login">
+    <span *ngIf="isLoginTaken()" class="error-message">
+      Login is already taken.
+    </span>
+</form>
